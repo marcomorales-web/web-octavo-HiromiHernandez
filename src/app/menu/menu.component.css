@@ -1,0 +1,175 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Centrado */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.login-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 380px;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+/* Entrada arrastrada */
+.page-entrada {
+  transform: translateX(-120%);
+  animation: abrirPagina 0.9s ease-out forwards;
+  animation-delay: 0.25s;
+}
+
+@keyframes abrirPagina {
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Logo */
+.icono {
+  display: block;
+  margin: 15px auto 30px auto;
+  width: 120px;
+}
+
+/* Título */
+.login-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Formulario */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #141e30;
+}
+
+/* Botón */
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #05013f;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background: #037415;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+
+
+/* Contenedor principal */
+.main-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Título */
+.main-title {
+  color: white;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+/* Contenedor de cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card */
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.4);
+}
+
+/* Imagen */
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Título card */
+.card h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Botón */
+.btn-card {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #05013f;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-card:hover {
+  background: #037415;
+}
